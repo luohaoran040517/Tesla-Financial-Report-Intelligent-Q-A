@@ -1,0 +1,29 @@
+[project]
+name = "tesla-crossyear-rag"
+version = "0.1.0"
+description = "Tesla 10-K/10-Q cross-year financial QA system"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "chromadb>=1.5.2",
+    "dashscope>=1.25.13",
+    "numpy>=2.4.2",
+    "openai>=2.26.0",
+    "pandas>=2.3.3",
+    "pdfplumber>=0.11.9",
+    "pydantic>=2.12.5",
+    "pypdf>=6.7.5",
+    "rank-bm25>=0.2.2",
+    "rapidfuzz>=3.14.3",
+    "sentence-transformers>=5.2.3",
+    "streamlit>=1.55.0",
+    "tabulate>=0.10.0",
+]
+
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+package = false
+

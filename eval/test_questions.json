@@ -1,0 +1,107 @@
+﻿[
+  {
+    "id": "V2-Q6",
+    "question": "Which filing first mentions a factory capacity bottleneck (or bottleneck production output)? Return file name, page number, and quote.",
+    "scope": "all",
+    "years": [2021, 2022, 2023, 2024, 2025],
+    "expected_keywords": ["first", "bottleneck", "page"]
+  },
+  {
+    "id": "V2-F2",
+    "question": "Compare Free cash flow year-over-year between 2024 Q1 and 2025 Q1, and provide three management-quoted reasons for the change with page citations.",
+    "scope": "all",
+    "years": [2024, 2025],
+    "expected_keywords": ["2024 Q1", "2025 Q1", "three reasons", "STRICT_EVIDENCE_COMPLETE"]
+  },
+  {
+    "id": "V2-Q2",
+    "question": "Calculate the quarter-over-quarter change of Total revenues from 2022 Q1 to 2022 Q2 (absolute and percentage).",
+    "scope": "10-Q",
+    "years": [2022],
+    "expected_keywords": ["Total revenues", "qoq", "percentage"]
+  },
+  {
+    "id": "V2-Q9",
+    "question": "Compare Automotive gross margin for 2021 Q4, 2022 Q4, and 2023 Q4. Is it continuously decreasing?",
+    "scope": "10-K",
+    "years": [2021, 2022, 2023],
+    "expected_keywords": ["Automotive gross margin", "2021 Q4", "2022 Q4", "2023 Q4"]
+  },
+  {
+    "id": "V2-F4",
+    "question": "Compute quarterly India revenue share from 2021 to 2023, identify the peak quarter, and provide the exact percentage with sources.",
+    "scope": "all",
+    "years": [2021, 2022, 2023],
+    "expected_keywords": ["India revenue share", "peak quarter", "exact percentage", "STRICT_EVIDENCE_COMPLETE"]
+  },
+  {
+    "id": "V2-Q1",
+    "question": "In 2021 (Q1-Q4), which quarter has the highest Automotive gross margin? Return the quarter, value, and source page.",
+    "scope": "all",
+    "years": [2021],
+    "expected_keywords": ["Automotive gross margin", "highest", "Q"]
+  },
+  {
+    "id": "V2-F1",
+    "question": "Provide a complete Automotive gross margin sequence for 2020 Q4, 2021 Q4, 2022 Q4, and 2023 Q4, then compute the CAGR from 2020 to 2023 with source pages.",
+    "scope": "all",
+    "years": [2021, 2022, 2023],
+    "expected_keywords": ["2020 Q4", "2021 Q4", "2022 Q4", "2023 Q4", "CAGR", "STRICT_EVIDENCE_COMPLETE"]
+  },
+  {
+    "id": "V2-Q8",
+    "question": "Compare annual Free cash flow in 2021, 2022, and 2023 filings, and describe the trend.",
+    "scope": "10-K",
+    "years": [2021, 2022, 2023],
+    "expected_keywords": ["Free cash flow", "2021", "2022", "2023"]
+  },
+  {
+    "id": "V2-Q4",
+    "question": "Compute the sum of Free cash flow across all four quarters of 2023 and list each quarter value.",
+    "scope": "all",
+    "years": [2023],
+    "expected_keywords": ["Free cash flow", "2023", "sum"]
+  },
+  {
+    "id": "V2-F5",
+    "question": "Across all 2023 10-Q filings, find the first mention of 'Dojo chip mass-production risk,' quote the sentence, cite the page, and classify the risk level as High/Medium/Low.",
+    "scope": "10-Q",
+    "years": [2023],
+    "expected_keywords": ["Dojo", "mass-production risk", "High/Medium/Low", "STRICT_EVIDENCE_COMPLETE"]
+  },
+  {
+    "id": "V2-Q7",
+    "question": "Which 2022 quarterly filing mentions supply-chain/logistics/shutdown challenges, and what is Total revenues in that quarter?",
+    "scope": "10-Q",
+    "years": [2022],
+    "expected_keywords": ["supply chain", "logistics", "Total revenues"]
+  },
+  {
+    "id": "V2-Q3",
+    "question": "Compare Total automotive revenues between 2023 Q3 and 2022 Q3. Report direction and magnitude of change.",
+    "scope": "all",
+    "years": [2022, 2023],
+    "expected_keywords": ["Total automotive revenues", "2023 Q3", "2022 Q3"]
+  },
+  {
+    "id": "V2-F3",
+    "question": "Report Cybertruck deliveries for each quarter of 2022, then calculate the full-year total with table citations.",
+    "scope": "10-Q",
+    "years": [2022],
+    "expected_keywords": ["Cybertruck deliveries", "2022", "full-year total", "STRICT_EVIDENCE_COMPLETE"]
+  },
+  {
+    "id": "V2-Q10",
+    "question": "From 2021 to 2023, provide the quarterly Free cash flow path and identify the peak and trough quarters.",
+    "scope": "all",
+    "years": [2021, 2022, 2023],
+    "expected_keywords": ["Free cash flow", "peak", "trough", "quarter"]
+  },
+  {
+    "id": "V2-Q5",
+    "question": "Between 2022 Q1 and 2023 Q4, which quarter has the lowest Total GAAP gross margin and what is the value?",
+    "scope": "all",
+    "years": [2022, 2023],
+    "expected_keywords": ["Total GAAP gross margin", "lowest", "quarter"]
+  }
+]

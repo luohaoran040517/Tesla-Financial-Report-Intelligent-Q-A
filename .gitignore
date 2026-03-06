@@ -1,0 +1,13 @@
+﻿.venv/
+.uv-cache/
+__pycache__/
+*.pyc
+
+# generated artifacts
+data/processed/*.jsonl
+indexes/
+eval/results.json
+reports/eval_summary.md
+
+# local env
+.env
