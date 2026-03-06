@@ -1,0 +1,39 @@
+按下面 4 步用就行（Windows PowerShell）：
+
+1. 进入项目并安装依赖
+```powershell
+cd C:\Users\Lenovo\Desktop\Tesla
+$env:UV_CACHE_DIR="$PWD\.uv-cache"
+uv sync
+```
+
+2. 配置模型与 API（每次新终端都要设）
+```powershell
+$env:EMBEDDING_MODEL="C:\Users\Lenovo\Desktop\Tesla\models\bge-base-en-v1.5"
+$env:FORCE_LOCAL_EMBEDDING="0"
+$env:OPENAI_BASE_URL="https://dashscope.aliyuncs.com/compatible-mode/v1"
+$env:OPENAI_API_KEY="your apikey"
+$env:LLM_MODEL="qwen-plus"
+```
+
+3. 构建索引（首次必须跑）
+```powershell
+uv run python -m src.pipeline.build_index
+```
+以后如果只改了问答逻辑、不改 PDF，可加速：
+```powershell
+uv run python -m src.pipeline.build_index --skip-parse
+```
+
+4. 启动界面
+```powershell
+uv run streamlit run app.py
+```
+打开浏览器里显示的本地地址，输入问题即可。
+
+补充：
+- 跑测试集：`uv run python -m src.pipeline.run_eval`
+- 结果文件：  
+  [eval/results.json](C:\Users\Lenovo\Desktop\Tesla\eval\results.json)  
+  [reports/eval_summary.md](C:\Users\Lenovo\Desktop\Tesla\reports\eval_summary.md)
+
